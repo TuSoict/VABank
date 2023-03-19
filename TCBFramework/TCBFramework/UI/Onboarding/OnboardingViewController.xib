@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OnboardingViewController" customModule="BankAssistant" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="RpR-Re-Lb5" id="7SP-3l-KCd"/>
+                <outlet property="leftLogoImageView" destination="AIv-hw-24Y" id="t9y-Fo-2zg"/>
+                <outlet property="skipButton" destination="fd8-Oj-gp0" id="RwB-1a-bNw"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="voiceAssistantView" destination="F6n-IN-jc6" id="FRV-yl-mPF"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background_launchscreen" translatesAutoresizingMaskIntoConstraints="NO" id="OBK-EW-TwO">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fd8-Oj-gp0">
+                    <rect key="frame" x="354" y="44" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="Ph3-Rc-Ue3"/>
+                        <constraint firstAttribute="width" constant="60" id="iMq-mu-2Lz"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="SKIP">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="skipButtonTapped:" destination="-1" eventType="touchUpInside" id="G2H-uE-ZnK"/>
+                    </connections>
+                </button>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_launch_screen" translatesAutoresizingMaskIntoConstraints="NO" id="AIv-hw-24Y">
+                    <rect key="frame" x="20" y="58" width="110" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="110" id="1cT-2h-aHH"/>
+                        <constraint firstAttribute="height" constant="32" id="uES-07-7Xh"/>
+                    </constraints>
+                </imageView>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="RpR-Re-Lb5">
+                    <rect key="frame" x="0.0" y="104" width="414" height="758"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="qwC-b1-NZo">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F6n-IN-jc6" customClass="VoiceAssistantView" customModule="BankAssistant" customModuleProvider="target">
+                    <rect key="frame" x="175" y="748" width="64" height="64"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="64" id="3TQ-mE-Z3c"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="RpR-Re-Lb5" secondAttribute="bottom" id="0Cd-2F-vhf"/>
+                <constraint firstAttribute="bottom" secondItem="OBK-EW-TwO" secondAttribute="bottom" id="1eJ-JQ-E74"/>
+                <constraint firstItem="F6n-IN-jc6" firstAttribute="width" secondItem="F6n-IN-jc6" secondAttribute="height" id="59v-Jp-x80"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="F6n-IN-jc6" secondAttribute="bottom" constant="50" id="8yG-mU-DJs"/>
+                <constraint firstItem="OBK-EW-TwO" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Ccm-AJ-r6R"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="fd8-Oj-gp0" secondAttribute="trailing" id="GCY-iV-nFw"/>
+                <constraint firstItem="RpR-Re-Lb5" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Q3H-xa-V8S"/>
+                <constraint firstItem="fd8-Oj-gp0" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="YOP-7G-Ihe"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="OBK-EW-TwO" secondAttribute="trailing" id="dv2-fD-SOc"/>
+                <constraint firstItem="AIv-hw-24Y" firstAttribute="centerY" secondItem="fd8-Oj-gp0" secondAttribute="centerY" id="eOP-2g-1Zv"/>
+                <constraint firstItem="OBK-EW-TwO" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="f1C-HP-rph"/>
+                <constraint firstItem="AIv-hw-24Y" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="h76-Tp-Vuw"/>
+                <constraint firstItem="F6n-IN-jc6" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="jT3-6R-7CP"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="RpR-Re-Lb5" secondAttribute="trailing" id="k9k-y3-HRy"/>
+                <constraint firstItem="RpR-Re-Lb5" firstAttribute="top" secondItem="fd8-Oj-gp0" secondAttribute="bottom" id="wld-cf-FAg"/>
+            </constraints>
+            <point key="canvasLocation" x="131.8840579710145" y="80.357142857142847"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="background_launchscreen" width="375" height="812"/>
+        <image name="logo_launch_screen" width="258" height="71"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="115" id="KGk-i7-Jjw" customClass="CardTableViewCell" customModule="BankAssistant" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="367" height="115"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="367" height="115"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1kJ-U4-51w">
+                        <rect key="frame" x="20" y="8" width="327" height="70"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$ 1,020.92" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wu9-aF-LrW">
+                                <rect key="frame" x="93" y="15" width="76" height="19"/>
+                                <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="16"/>
+                                <color key="textColor" red="0.098039215690000001" green="0.098039215690000001" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LMp-fz-YHW">
+                                <rect key="frame" x="12" y="15" width="65" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="65" id="UQo-i9-aIX"/>
+                                    <constraint firstAttribute="height" constant="40" id="ifN-je-cPe"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Visa" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TMr-A6-mG1">
+                                <rect key="frame" x="93" y="38.5" width="27.5" height="16.5"/>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                                <color key="textColor" red="0.6705882352941176" green="0.68627450980392157" blue="0.72941176470588232" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_checked" translatesAutoresizingMaskIntoConstraints="NO" id="oHu-Ge-7mc">
+                                <rect key="frame" x="279" y="19" width="32" height="32"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.95294117647058818" green="0.96078431372549022" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wu9-aF-LrW" firstAttribute="leading" secondItem="LMp-fz-YHW" secondAttribute="trailing" constant="16" id="0di-J1-Pcz"/>
+                            <constraint firstItem="TMr-A6-mG1" firstAttribute="leading" secondItem="wu9-aF-LrW" secondAttribute="leading" id="2Nc-AF-uZe"/>
+                            <constraint firstItem="LMp-fz-YHW" firstAttribute="centerY" secondItem="1kJ-U4-51w" secondAttribute="centerY" id="D2r-rG-DDk"/>
+                            <constraint firstItem="wu9-aF-LrW" firstAttribute="top" secondItem="LMp-fz-YHW" secondAttribute="top" id="Uml-5n-EjJ"/>
+                            <constraint firstItem="LMp-fz-YHW" firstAttribute="leading" secondItem="1kJ-U4-51w" secondAttribute="leading" constant="12" id="ZxB-Cb-Dbl"/>
+                            <constraint firstItem="oHu-Ge-7mc" firstAttribute="centerY" secondItem="1kJ-U4-51w" secondAttribute="centerY" id="fFA-rz-ugT"/>
+                            <constraint firstAttribute="trailing" secondItem="oHu-Ge-7mc" secondAttribute="trailing" constant="16" id="gY5-o1-zlP"/>
+                            <constraint firstAttribute="height" constant="70" id="gad-jo-sgQ"/>
+                            <constraint firstItem="TMr-A6-mG1" firstAttribute="bottom" secondItem="LMp-fz-YHW" secondAttribute="bottom" id="xko-x7-aNL"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="1kJ-U4-51w" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="5wa-sq-IXj"/>
+                    <constraint firstItem="1kJ-U4-51w" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="BKw-Of-w2W"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="1kJ-U4-51w" secondAttribute="bottom" constant="8" id="CgA-dd-scA"/>
+                    <constraint firstItem="1kJ-U4-51w" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="XOH-rB-boO"/>
+                    <constraint firstItem="1kJ-U4-51w" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="cMB-Tq-TiX"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="iconChecked" destination="oHu-Ge-7mc" id="3M1-m7-ipV"/>
+                <outlet property="iconImageView" destination="LMp-fz-YHW" id="fat-3C-qYI"/>
+                <outlet property="moneyLabel" destination="wu9-aF-LrW" id="kAz-mZ-GiW"/>
+                <outlet property="typeLabel" destination="TMr-A6-mG1" id="QAt-tV-Eeg"/>
+            </connections>
+            <point key="canvasLocation" x="186.23188405797103" y="159.04017857142856"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_checked" width="32" height="32"/>
+    </resources>
+</document>

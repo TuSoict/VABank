@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="OnboardingFinalCollectionViewCell" customModule="BankAssistant" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="547" height="639"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="547" height="639"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Đăng ký mở tài khoản" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ja0-b2-h82">
+                        <rect key="frame" x="203.5" y="583.5" width="140" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="onboarding_4" translatesAutoresizingMaskIntoConstraints="NO" id="Qxa-bX-UeN">
+                        <rect key="frame" x="141" y="88" width="265" height="265"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="265" id="Ah6-Zq-zGA"/>
+                            <constraint firstAttribute="width" secondItem="Qxa-bX-UeN" secondAttribute="height" id="ZBC-lO-rfz"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chào mừng AI Bank" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TgQ-XT-6IX">
+                        <rect key="frame" x="168.5" y="371" width="210" height="29"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8E8-fh-LK0">
+                        <rect key="frame" x="123.5" y="504.5" width="300" height="46"/>
+                        <color key="backgroundColor" red="1" green="0.74117647060000003" blue="0.41176470590000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="300" id="9R4-1v-eZ6"/>
+                            <constraint firstAttribute="height" constant="46" id="WqZ-gS-9om"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" title="Đăng nhập ">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="loginButtonTapped:" destination="gTV-IL-0wX" eventType="touchUpInside" id="Z8F-l4-vdt"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eEk-h8-40c">
+                        <rect key="frame" x="150" y="419" width="247.5" height="33.5"/>
+                        <string key="text">AI Bank mang lại trải nghiệm tối ưu, dễ
+ dàng sử dụng, miễn phí, tức thì</string>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.79215686269999996" green="0.79215686269999996" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_launch_screen" translatesAutoresizingMaskIntoConstraints="NO" id="66J-Rm-IgS">
+                        <rect key="frame" x="206" y="10" width="135" height="36"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="36" id="Naf-YZ-XSa"/>
+                            <constraint firstAttribute="width" constant="135" id="Z2l-5D-BUk"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="66J-Rm-IgS" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="1jE-Vx-afA"/>
+                <constraint firstItem="TgQ-XT-6IX" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="7qV-3i-SDM"/>
+                <constraint firstItem="TgQ-XT-6IX" firstAttribute="top" secondItem="Qxa-bX-UeN" secondAttribute="bottom" constant="18" id="CIQ-CJ-nh3"/>
+                <constraint firstItem="Ja0-b2-h82" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="J1W-2e-9GP"/>
+                <constraint firstItem="8E8-fh-LK0" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="MvB-1P-S2d"/>
+                <constraint firstItem="Qxa-bX-UeN" firstAttribute="width" secondItem="Qxa-bX-UeN" secondAttribute="height" id="QUY-oX-eA6"/>
+                <constraint firstItem="eEk-h8-40c" firstAttribute="top" secondItem="TgQ-XT-6IX" secondAttribute="bottom" constant="19" id="U6T-J8-uMf"/>
+                <constraint firstItem="Ja0-b2-h82" firstAttribute="top" secondItem="8E8-fh-LK0" secondAttribute="bottom" constant="33" id="fwj-YA-fWT"/>
+                <constraint firstItem="Qxa-bX-UeN" firstAttribute="top" secondItem="66J-Rm-IgS" secondAttribute="bottom" constant="42" id="i8n-aZ-Q6l"/>
+                <constraint firstItem="8E8-fh-LK0" firstAttribute="top" secondItem="eEk-h8-40c" secondAttribute="bottom" constant="52" id="mwL-z4-U0P"/>
+                <constraint firstItem="66J-Rm-IgS" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="par-O5-AwJ"/>
+                <constraint firstItem="Qxa-bX-UeN" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="sQV-kb-C0k"/>
+                <constraint firstItem="eEk-h8-40c" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="ve2-zr-zYt"/>
+            </constraints>
+            <size key="customSize" width="547" height="639"/>
+            <point key="canvasLocation" x="434.05797101449281" y="269.53125"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="logo_launch_screen" width="258" height="71"/>
+        <image name="onboarding_4" width="265" height="265"/>
+    </resources>
+</document>

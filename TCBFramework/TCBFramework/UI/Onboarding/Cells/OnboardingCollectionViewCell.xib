@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="OnboardingCollectionViewCell" customModule="BankAssistant" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="497" height="521"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="497" height="521"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="onboarding_1" translatesAutoresizingMaskIntoConstraints="NO" id="1nA-lk-8G1">
+                        <rect key="frame" x="116" y="28" width="265" height="265"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="265" id="ACy-vm-IJd"/>
+                            <constraint firstAttribute="width" secondItem="1nA-lk-8G1" secondAttribute="height" id="NND-Xf-dDS"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Nj-Fw-71W">
+                        <rect key="frame" x="5" y="343" width="487" height="29"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="chl-hE-4pr">
+                        <rect key="frame" x="30" y="399" width="437" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.792156862745098" green="0.792156862745098" blue="0.792156862745098" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="0Nj-Fw-71W" firstAttribute="top" secondItem="1nA-lk-8G1" secondAttribute="bottom" constant="50" id="Gi6-Rw-fX0"/>
+                <constraint firstItem="chl-hE-4pr" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="30" id="ML4-df-uLh"/>
+                <constraint firstItem="1nA-lk-8G1" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="RWg-4d-DWP"/>
+                <constraint firstItem="chl-hE-4pr" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="VKM-Fo-NM4"/>
+                <constraint firstItem="chl-hE-4pr" firstAttribute="top" secondItem="0Nj-Fw-71W" secondAttribute="bottom" constant="27" id="WfX-jF-LcJ"/>
+                <constraint firstItem="0Nj-Fw-71W" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="fHO-pK-MzS"/>
+                <constraint firstItem="1nA-lk-8G1" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="28" id="l5b-Tn-w1e"/>
+                <constraint firstItem="0Nj-Fw-71W" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="nWs-Ps-TC7"/>
+                <constraint firstItem="1nA-lk-8G1" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" multiplier="265:375" priority="900" id="oQV-iV-ARD"/>
+            </constraints>
+            <size key="customSize" width="676" height="521"/>
+            <connections>
+                <outlet property="onboardingDescriptionLabel" destination="chl-hE-4pr" id="dKI-Mj-S5z"/>
+                <outlet property="onboardingImageView" destination="1nA-lk-8G1" id="l4Y-fX-NJw"/>
+                <outlet property="onboardingTitleLabel" destination="0Nj-Fw-71W" id="8RU-7Y-f39"/>
+            </connections>
+            <point key="canvasLocation" x="242.75362318840581" y="236.71875"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="onboarding_1" width="274" height="265"/>
+    </resources>
+</document>
